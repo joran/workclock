@@ -113,3 +113,12 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+header{
+    width: 100%;
+}
+.btn{
+    padding: 2em;
+    margin: 1% 5%;
+    width: 90%;
+    font-size: 2em;
+}
