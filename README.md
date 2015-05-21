@@ -1,3 +1,8 @@
+Notice
+------
+This an experimental app for Android built with Cordova for tracking my working hours, like a punchcard.
+There are better apps available at Google Play, you should probably use them instead.
+
 Setup
 -----
 Download and install Android SDK
