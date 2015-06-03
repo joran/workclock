@@ -3,6 +3,8 @@
     /* ---------------------------------- Local Variables ---------------------------------- */
 	HomeView.prototype.template = Handlebars.compile($("#home-tpl").html());
     var store = new TimeEntryStore();
+    store.initialize();
+    
     var service = new TimeEntryService(store);
     var provider = new TimeToDayProvider(store);
     

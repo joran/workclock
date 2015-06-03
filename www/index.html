@@ -26,12 +26,51 @@
     <button class="stop-start-btn btn btn-block">Stop/Start</button>
     <button class="stop-btn btn btn-block">Stop</button>
     
-    <div class="contentt">
-        {{#if time}}
+    {{#if time}}
+        <div>
             Today: {{time}}
-        {{/if}}
-        {{lastPunchedIn}}
-    </div>
+        </div>
+    {{/if}}
+    {{#if lastPunchedIn}}
+        <div>
+            Punched in: {{lastPunchedIn}}
+        </div>
+    {{/if}}
+</script>
+    
+<!-- List entries -->
+<script id="home-tpl" type="text/template">
+    <header class="bar bar-nav">
+        <h1 class="title">WorkClock</h1>
+    </header>
+    <button class="start-btn btn btn-block">Start</button>
+    <button class="stop-start-btn btn btn-block">Stop/Start</button>
+    <button class="stop-btn btn btn-block">Stop</button>
+    
+    {{#if time}}
+        <div>
+            Today: {{time}}
+        </div>
+    {{/if}}
+    {{#if lastPunchedIn}}
+        <div>
+            Punched in: {{lastPunchedIn}}
+        </div>
+    {{/if}}
+</script>
+    
+<!-- Show entry -->
+<script id="home-tpl" type="text/template">
+    <li> 
+    {{#if punchedIn}}
+        {{punchedIn}}
+    {{/if}}
+    {{#if punchedOut}}
+        - {{punchedOut}}
+    {{/if}}
+    {{#if time}}
+        ({{time}})
+    {{/if}}
 </script>
     
 <!-- ############################################################ -->
